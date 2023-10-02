@@ -1,68 +1,64 @@
 ---
 title: Introduction
-description: "Welcome to the home of your new documentation"
+description: "Welcome to Orchestre !"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
 
-## Setting up
+Welcome ! Glad you think Orchestre can be use. 
 
-The first step to world-class documentation is setting up your editing environnments.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+Orchestre listens for specific events on the third party app, then responds with AI. These response can be customized - Orchestre can query any information (products, data etc...) from databases and generate tailored responses. 
 
-## Make it yours
+With its extensible architecture, you can easily integrate your own products, manage users, and deploy to production fast.
+
+**Use case** : Let's say you want to automate customer service response for 15 Gmail accounts. Connect the accounts to Orchestre, add your LLM, customize your prompts, and Orchestre automates the responses for you. 
+
+
+Key Features:
+- Connect prebuilt third party extensions (Gmail etc...)
+- Easily connect different types of LLMs (OpenAI, LLama, Huggingface etc..) 
+- Integrate external information & products in your workflow (Connect your firebase database) 
+- User management API. 
+- Easy deployment with Docker
+- Easily integrate with Langchain and LlamaIndex
+
+Orchestre is built for scale. You can 
+- Have multiple users on one server
+- Have multiple providers (eg third party apps) in one account.
+
+Imagine - you're able to automate all your company's emails from one orchestre server. Simple to monitor and to manage.  
+
+Contributions are welcome! Also feel free to reach out to me if the project is of interest.
+
+
+## Get started ! 
 
 Update your docs to your brand and add valuable content for the best user conversion.
 
 <CardGroup cols={2}>
   <Card
-    title="Customize Style"
+    title="Overview"
     icon="palette"
-    href="https://mintlify.com/docs/settings/global"
+    href="./overview.mdx"
   >
     Customize your docs to your company's colors and brands
   </Card>
   <Card
-    title="Reference APIs"
+    title="LLMs"
     icon="code"
     href="https://mintlify.com/docs/api-playground/openapi"
   >
     Automatically generate endpoints from an OpenAPI spec
   </Card>
   <Card
-    title="Add Components"
+    title="Providers"
     icon="screwdriver-wrench"
     href="https://mintlify.com/docs/components/accordion"
   >
     Build interactive features and designs to guide your users
   </Card>
   <Card
-    title="Get Inspiration"
+    title="User Management"
     icon="stars"
     href="https://mintlify.com/showcase"
   >
