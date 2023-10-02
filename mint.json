@@ -8,15 +8,15 @@
   "openapi": "https://github.com/matthieu-perso/orchestre-docs/blob/main/openapi.json",
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#9563FF",
+    "primary": "#F0E9E9",
     "light": "#AE87FF",
     "dark": "#0D001D",
     "background": {
       "dark": "#090014"
     },
     "anchors": {
-      "from": "#FF7F57",
-      "to": "#9563FF"
+      "from": "#E1DEDE",
+      "to": "#F0E9E9"
     }
   },
   "topbarLinks": [
