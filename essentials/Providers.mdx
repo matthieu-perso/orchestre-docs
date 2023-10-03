@@ -1,0 +1,37 @@
+---
+title: 'Providers'
+description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+icon: 'map'
+---
+
+
+# providers
+
+Providers are third party apps that you can automate (Twitter, Gmail, Whatsapp )
+
+THe providers has two functions
+
+
+
+## New custom provider
+
+When you are going to add new custom provider class, you can add new provider class under /providers/plugins/{new provider} directory.
+The new custom provider has to inherit BaseProvider class and implement the appropriate functions. 
+You can check the dummy or gmail providers
+
+```python
+class GMailProvider(BaseProvider):
+    def __init__(self):
+        self.sync_time = -1
+        self.access_token = None
+        self.refresh_token = None
+
+    def get_provider_info(self):
+        return {
+            "provider": GMailProvider.__name__.lower(),
+            "short_name": "Gmail",
+            "provider_description": "GMail Provider",
+            "provider_icon_url": "/gmail.svg",
+        }
+   ....
+```

@@ -4,44 +4,35 @@ description: "Welcome to Orchestre !"
 ---
 
 
-Welcome ! Glad you think Orchestre can be use. 
+Welcome ! Glad you think Orchestre can be use. Here is a quick overview of the project.
+
+1. Core concepts
+
+Core concepts : 
+- Products : Product or information you fetch 
+- Providers : Third party apps (eg Gmail or Whatsapp)
+- Services : LLM Services 
+
+Orchestre automates providers through services. The automation can retrieve information from Products.
+
+ 2. Directory Structure
+
+- apis: Contains the api endpoints declarations (user, bot, message, provider features)
+- core: Contains the core classes; bot, dynamic loader, task management, utils classes
+- db: Contains the Firebase database access functions
+- products: Contains the Product associated classes
+- providers: Contains the Provider classes. New provider classes will be added here
+- services: Contains the class for LLMs.
+- tests : Contains the unit-test classes
 
 
+The server pools the provider at set intervals (of your choosing) to check if there is any new messages or information. 
+
+Based on the rules you've set in the provider, the server then replies with an auto generated message. 
 
 
-
-
-## Get started ! 
-
-Update your docs to your brand and add valuable content for the best user conversion.
-
-<CardGroup cols={2}>
-  <Card
-    title="Overview"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="LLMs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Providers"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="User Management"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+<img
+  className="hidden dark:block"
+  src="/images/orchestre.png"
+  alt="Hero Dark"
+/>
